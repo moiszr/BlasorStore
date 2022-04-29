@@ -1,0 +1,79 @@
+﻿@page "/createOrden"
+<h3>CreateOrden</h3>
+
+<EditForm Model="eorden" OnInvalidSubmit="createOrden">
+
+     <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.Cost_order" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+         <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.Order_date" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+         <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.Shipped_date" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+        <div class="form-group">
+            <label>Product name </label>
+          <InputText class="form-control" @bind-Value="eorden.Shipping_addres" id="Product_name" placeholder="PRODUCT_NAME" />
+        </div>
+        <div class="form-group">
+            <label>Product name </label>
+          <InputText class="form-control" @bind-Value="eorden.Shipping_city" id="Product_name" placeholder="PRODUCT_NAME" />
+        </div>
+        <div class="form-group">
+            <label>Product name </label>
+          <InputText class="form-control" @bind-Value="eorden.Shipping_province" id="Product_name" placeholder="PRODUCT_NAME" />
+        </div>
+         <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.Latitude" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+         <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.Longitude" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+         <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.Shipping_fee" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+         <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.Taxes" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+        <div class="form-group">
+            <label>Product name </label>
+          <InputText class="form-control" @bind-Value="eorden.Payment_type" id="Product_name" placeholder="PRODUCT_NAME" />
+        </div>
+        <div class="form-group">
+            <label>Product name </label>
+          <InputText class="form-control" @bind-Value="eorden.Note" id="Product_name" placeholder="PRODUCT_NAME" />
+        </div>
+          <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.User_id" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+         <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.Orderstatus_id" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+     <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <button @onclick="() => createOrden()" class="btn btn-success" type="submit">Guardar</button>
+    <a href="/" class="btn btn-secondary">Cancelar</a>
+</EditForm>
+
+@code {
+    [Inject] NavigationManager navigationManager { get; set; } = default!;
+    public E_Orden eorden = new E_Orden();
+    public D_Orden objDtosO = new D_Orden();
+
+    public void createOrden()
+    {
+        objDtosO.InsertarOrden(eorden);
+        navigationManager.NavigateTo("/");
+    }
+}

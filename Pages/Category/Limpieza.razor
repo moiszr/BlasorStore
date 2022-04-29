@@ -1,0 +1,54 @@
+﻿@page "/limpieza"
+
+<PageTitle>Limpieza - BlazorStore</PageTitle>
+
+  <div class="content-wrapper">
+    <div class="content-header pt-4">
+      <div class="container">
+        <img class="d-block w-100 elevation-2 mb-5"
+        src="https://i5.walmartimages.com/dfw/4ff9c6c9-67c9/k2-_203301f3-e0a3-4287-8558-cf7d364e012d.v1.jpg"
+        alt="" style="height:360px; border-radius: 8px;">
+        <h3 class="text-center">Limpieza</h3>
+      </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            @if (eproduct != null)
+            {
+                <div class="contenedor">
+                @foreach (var product in eproduct)
+                {
+                    <div class="tarjeta">
+                        <img src="@product.Product_image" alt="Imagen Producto">
+                        <h4>@product.Product_name</h4>
+                        <p>$@product.Sale_price</p>
+                        <a href="/productdetail/@product.Id" class="btn btn-primary">Ver Producto</a>
+                        <button @onclick="() => AddCard(product.Id)" class="btn btn-primary">+ Añadir</button>
+                    </div>
+                }
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<E_Products> eproduct = new List<E_Products>();
+    public D_Products objDtosP = new D_Products();
+
+    protected override void OnInitialized()
+    {
+        eproduct = objDtosP.MostrosProductosCategoria(6);
+    }
+
+    public void AddCard(int idproduct)
+    {
+        E_Products pro = new E_Products();
+
+        foreach (var item in E_Users.Users)
+        {
+            objDtosP.InsertarCarrito(idproduct, item.Id);
+            pro.Cantidadcarrito = objDtosP.MostrarCarrito(item.Id).Count();
+        }
+    }
+}

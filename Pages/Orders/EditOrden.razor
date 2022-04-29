@@ -1,0 +1,120 @@
+﻿@page "/editorden/{id:int}"
+
+
+<div class="content-wrapper">
+    <div class="content">
+      <div class="container-fluid">
+          <center>
+            <h3>EditOrden</h3>
+            </center>
+            <EditForm Model="eorden" OnInvalidSubmit="editorden">
+
+     <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.Cost_order" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+         <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.Order_date" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+         <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.Shipped_date" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+        <div class="form-group">
+            <label>Product name </label>
+          <InputText class="form-control" @bind-Value="eorden.Shipping_addres" id="Product_name" placeholder="PRODUCT_NAME" />
+        </div>
+        <div class="form-group">
+            <label>Product name </label>
+          <InputText class="form-control" @bind-Value="eorden.Shipping_city" id="Product_name" placeholder="PRODUCT_NAME" />
+        </div>
+        <div class="form-group">
+            <label>Product name </label>
+          <InputText class="form-control" @bind-Value="eorden.Shipping_province" id="Product_name" placeholder="PRODUCT_NAME" />
+        </div>
+         <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.Latitude" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+         <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.Longitude" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+         <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.Shipping_fee" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+         <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.Taxes" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+        <div class="form-group">
+            <label>Product name </label>
+          <InputText class="form-control" @bind-Value="eorden.Payment_type" id="Product_name" placeholder="PRODUCT_NAME" />
+        </div>
+        <div class="form-group">
+            <label>Product name </label>
+          <InputText class="form-control" @bind-Value="eorden.Note" id="Product_name" placeholder="PRODUCT_NAME" />
+        </div>
+          <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.User_id" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+         <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eorden.Orderstatus_id" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+     <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <button @onclick="() => editorden()" class="btn btn-success" type="submit">Guardar</button>
+    <a href="/" class="btn btn-secondary">Cancelar</a>
+</EditForm>
+
+</div>
+</div>
+</div>
+
+@code {
+    
+    [Inject] NavigationManager navigationManager { get; set; } = default!;
+    private List<E_Orden> eorden1 = new List<E_Orden>();
+    public E_Orden eorden = new E_Orden();
+    public D_Orden objDtosO = new D_Orden();
+    [Parameter] public int id { get; set; }
+
+
+     protected override async Task OnParametersSetAsync()
+    {
+        eorden1 = objDtosO.MostrosOrdenÏD(id);
+         @if (eorden1 != null)
+            {
+                foreach (var orden in eorden1)
+                {
+                eorden.Cost_order = orden.Cost_order;
+                eorden.Order_date = orden.Order_date;
+                eorden.Shipped_date = orden.Shipped_date;
+                eorden.Shipping_addres = orden.Shipping_addres;
+                eorden.Shipping_city = orden.Shipping_city;
+                eorden.Shipping_province = orden.Shipping_province;
+                eorden.Latitude = orden.Latitude;
+                eorden.Longitude = orden.Longitude;
+                eorden.Shipping_fee = orden.Shipping_fee;
+                eorden.Shipping_addres = orden.Shipping_addres;
+                eorden.Taxes = orden.Taxes;
+                eorden.Payment_type = orden.Payment_type;
+                eorden.Note = orden.Note;
+                eorden.User_id = orden.User_id;
+                eorden.Orderstatus_id = orden.Orderstatus_id;
+                eorden.Id = id;
+            }
+        }
+    }
+     public void editorden()
+    {
+        objDtosO.EditarOrden(eorden);
+        navigationManager.NavigateTo("/");
+    }
+
+}

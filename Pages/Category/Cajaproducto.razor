@@ -1,0 +1,33 @@
+﻿@page "/cajaproducto"
+
+<h3>Cajaproducto</h3>
+
+  @if (eproduct != null)
+            {
+                foreach (var product in eproduct)
+                {
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="@product.Product_name" alt="Card image cap">
+                            <div class="card-body">  
+                                <center><h5>@product.Product_name</h5>
+                                    <p class="card-text"><b>$@product.Offer_sale</b>  $@product.Sale_price</p></center>
+                                    <a href="#" class="btn btn-primary" style="float:right;">+ Add</a>
+                            </div>
+                        </div>
+                }
+            }
+
+
+@code {
+    [Inject] NavigationManager navigationManager { get; set; } = default!;
+    private List<E_Products> eproduct = new List<E_Products>();
+    public D_Products objDtosP = new D_Products();
+
+    protected override void OnInitialized()
+    {
+        eproduct = objDtosP.MostrosProductos();
+    }
+
+    }
+}

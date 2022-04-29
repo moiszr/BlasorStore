@@ -1,0 +1,25 @@
+﻿@page "/paypal"
+
+@inject IJSRuntime JsRuntime
+
+    <div id="smart-button-container">
+        <div style="text-align: center;">
+            <div id="paypal-button-container"></div>
+            <h3>Paypal</h3>
+        </div>
+    </div>
+
+    
+
+@code {
+    public string name = "";
+    protected override async Task OnInitializedAsync()
+    {
+
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JsRuntime.InvokeAsync<string>("initPayPalButton");
+       
+    }
+}

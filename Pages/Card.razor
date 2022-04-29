@@ -1,0 +1,71 @@
+﻿@page "/card"
+
+<PageTitle>Carrito</PageTitle>
+
+<div class="content-wrapper">
+    <div class="content-header pt-4">
+      <div class="container">
+          <a href="/createOrden" class="btn btn-success mt-5">Comprar todo</a>
+          <div class="table table-responsive mt-5">
+            <table class="table caption-top">
+                <thead>
+                    <tr>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Code</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">CRUD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (eproduct != null)
+                    {
+                        foreach (var pro in eproduct)
+                        {
+                            <tr>
+                                <td><img src="@pro.Product_image" alt="img product" width="60" height="60"></td>
+                                <td>@pro.Code</td>
+                                <td>@pro.Product_name</td>
+                                <td>@pro.Sale_price</td>
+                                <td>
+                                    <button class="btn btn-danger" @onclick="() => DeleteproductCard(pro.Id)">Eliminar</button>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+@code {
+    [Inject] NavigationManager navigationManager { get; set; } = default!;
+    private List<E_Products> eproduct = new List<E_Products>();
+    public D_Products objDtosP = new D_Products();
+
+
+    protected override void OnInitialized( )
+    {
+        E_Products pro = new E_Products();
+
+        foreach (var item in E_Users.Users)
+        {
+            eproduct = objDtosP.MostrarCarrito(item.Id);
+        }
+    }
+
+    private void DeleteproductCard(int id)
+    {
+        objDtosP.DeleteproductCard(id);
+
+        E_Products pro = new E_Products();
+        foreach (var item in E_Users.Users)
+        {
+            eproduct = objDtosP.MostrarCarrito(item.Id);
+        }
+        navigationManager.NavigateTo("card");
+    }
+}

@@ -1,0 +1,73 @@
+﻿@page "/productdetail/{id:int}"
+
+@foreach (var product in eproduct)
+                {
+<PageTitle>@product.Product_name</PageTitle>
+
+<div class="content-wrapper">
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Detalle de Productos</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="card card-solid">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <h3 class="d-inline-block d-sm-none mt-5 pt-5">@product.Product_name</h3>
+              <div class="col-12">
+                <img src="@product.Product_image" class="product-image" alt="Product Image">
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <h3 class="my-3">@product.Product_name</h3>
+              <hr>
+              <div class="bg-gray py-2 px-3 mt-5">
+                <h2 class="mb-0">
+                  $@product.Sale_price
+                </h2>
+              </div>
+              <div class="mt-4">
+                <button @onclick="() => AddCard(product.Id)" class="btn btn-primary">Añadir al carrito <i class="fas fa-cart-plus fa-lg mr-2"></i></button>
+                  
+              </div>
+              <div class="mt-4">
+                <div class="mt-5">
+                    Te lo ponemos fácil, nuestro trabajo consiste en brindar los productos más competitivos en precio del mercado, solo publicamos artículos que estamos seguros no encontrarás más baratos en otro portal web, preferimos publicar 100 productos sin competencia a 1000 productos que no tienen un precio atractivo.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+ }
+
+@code {
+    private List<E_Products> eproduct = new List<E_Products>();
+    public D_Products objDtosP = new D_Products();
+    [Parameter] public int id { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        eproduct = objDtosP.ProductSearh(id);
+    }
+
+    public void AddCard(int idproduct)
+    {
+        E_Products pro = new E_Products();
+
+        foreach (var item in E_Users.Users)
+        {
+            objDtosP.InsertarCarrito(idproduct, item.Id);
+            pro.Cantidadcarrito = objDtosP.MostrarCarrito(item.Id).Count();
+        }
+    }
+}

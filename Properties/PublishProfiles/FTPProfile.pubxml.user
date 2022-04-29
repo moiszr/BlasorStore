@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAj74RKBd0vUmxnIqM0/ht7QAAAAACAAAAAAAQZgAAAAEAACAAAADhBD6i5EuNAaG6pZFXy1FP1JjGwnt4FUIBe+aCmN2qFAAAAAAOgAAAAAIAACAAAAAMnIKOqkRaY4RIR1dRSOnL8mgWzwqiJVMvJZWJYNu4uyAAAABebYNJ2AsOPGivazYnBizBsHKs3WL+zfnvHFRd1NAOWkAAAABJJOB9jM/A0xhVPmOac/MuqBWjZ9C52Aj6U5iSqNwQbC14TIeZE4Uh4QLBsKa6TRLoTvRMu/i8QgtEgsvSUiGh</EncryptedPassword>
+    <_PublishTargetUrl>ftp://155.254.244.28/www.BlazorStore.somee.com</_PublishTargetUrl>
+    <History>True|2022-04-28T23:49:56.0688867Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="Blazored.Toast.dll">
+      <publishTime>10/08/2021 16:15:14</publishTime>
+    </File>
+    <File Include="BlazorStore.deps.json">
+      <publishTime>04/28/2022 19:44:47</publishTime>
+    </File>
+    <File Include="BlazorStore.dll">
+      <publishTime>04/28/2022 19:44:47</publishTime>
+    </File>
+    <File Include="BlazorStore.exe">
+      <publishTime>04/28/2022 19:44:47</publishTime>
+    </File>
+    <File Include="BlazorStore.pdb">
+      <publishTime>04/28/2022 19:44:47</publishTime>
+    </File>
+    <File Include="BlazorStore.runtimeconfig.json">
+      <publishTime>04/28/2022 19:44:42</publishTime>
+    </File>
+    <File Include="libman.json">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll">
+      <publishTime>08/16/2021 15:22:22</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/sni.dll">
+      <publishTime>07/12/2017 07:24:24</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/sni.dll">
+      <publishTime>07/12/2017 07:24:22</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/sni.dll">
+      <publishTime>07/12/2017 07:24:22</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll">
+      <publishTime>08/16/2021 15:22:26</publishTime>
+    </File>
+    <File Include="System.Data.SqlClient.dll">
+      <publishTime>08/16/2021 15:14:56</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>04/28/2022 19:44:47</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/css/adminlte.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/css/adminlte.min.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/AdminLTELogo.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/avatar.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/avatar2.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/avatar3.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/avatar4.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/avatar5.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/BlazorStore.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/boxed-bg.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/boxed-bg.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/credit/american-express.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/credit/cirrus.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/credit/mastercard.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/credit/paypal.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/credit/paypal2.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/credit/visa.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/default-150x150.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/icons.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/photo1.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/photo2.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/photo3.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/photo4.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/prod-1.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/prod-2.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/prod-3.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/prod-4.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/prod-5.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/user1-128x128.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/user2-160x160.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/user3-128x128.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/user4-128x128.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/user5-128x128.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/user6-128x128.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/user7-128x128.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/img/user8-128x128.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/js/.eslintrc.json">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/js/adminlte.js">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/js/adminlte.js.map">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/js/adminlte.min.js">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/js/adminlte.min.js.map">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/js/pages/dashboard.js">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/js/pages/dashboard2.js">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/dist/js/pages/dashboard3.js">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.js">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.js.map">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js.map">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/bootstrap/js/bootstrap.js">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/bootstrap/js/bootstrap.js.map">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/bootstrap/js/bootstrap.min.js">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/bootstrap/js/bootstrap.min.js.map">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/css/all.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/css/all.min.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/css/brands.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/css/brands.min.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/css/fontawesome.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/css/fontawesome.min.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/css/regular.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/css/regular.min.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/css/solid.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/css/solid.min.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/css/svg-with-js.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/css/svg-with-js.min.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/css/v4-shims.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/css/v4-shims.min.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/webfonts/fa-brands-400.eot">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/webfonts/fa-brands-400.svg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/webfonts/fa-brands-400.ttf">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/webfonts/fa-brands-400.woff">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/webfonts/fa-brands-400.woff2">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/webfonts/fa-regular-400.eot">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/webfonts/fa-regular-400.svg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/webfonts/fa-regular-400.ttf">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/webfonts/fa-regular-400.woff">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/webfonts/fa-regular-400.woff2">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/webfonts/fa-solid-900.eot">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/webfonts/fa-solid-900.svg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/webfonts/fa-solid-900.ttf">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/webfonts/fa-solid-900.woff">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/fontawesome-free/webfonts/fa-solid-900.woff2">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/icheck-bootstrap/icheck-bootstrap.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/icheck-bootstrap/LICENSE">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/jquery/jquery.js">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/jquery/jquery.min.js">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/jquery/jquery.min.map">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/jquery/jquery.slim.js">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/jquery/jquery.slim.min.js">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/AdminLTE/plugins/jquery/jquery.slim.min.map">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/BlazorStore.styles.css">
+      <publishTime>04/28/2022 19:44:41</publishTime>
+    </File>
+    <File Include="wwwroot/css/estilos.css">
+      <publishTime>04/21/2022 17:58:56</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.css">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/img/alimentos-organicos.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/img/BlazorStore.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/img/carrusel.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/img/ducha.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/img/fondo.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/img/Foto 2x2 Daniel.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/img/Foto 2x2.jpg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/img/lampara-de-escritorio.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/img/televisor.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/img/vaso-de-agua.png">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/img/WhatsApp Image 2022-04-20 at 9.07.06 AM.jpeg">
+      <publishTime>04/21/2022 04:31:44</publishTime>
+    </File>
+    <File Include="wwwroot/script.js">
+      <publishTime>04/28/2022 19:00:00</publishTime>
+    </File>
+    <File Include="wwwroot/_content/Blazored.Toast/blazored-toast.css">
+      <publishTime>10/08/2021 16:15:10</publishTime>
+    </File>
+    <File Include="wwwroot/_content/Blazored.Toast/blazored-toast.min.css">
+      <publishTime>10/08/2021 16:15:10</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

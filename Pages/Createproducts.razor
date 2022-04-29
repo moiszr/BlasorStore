@@ -1,0 +1,78 @@
+﻿@page "/createproducts"
+
+     
+
+ <div class="content-wrapper">
+    <div class="content">
+      <div class="container-fluid">
+          <center>
+          <h3>Createproducts</h3>
+          <img src="@imagen" style="width:200px;  height:200px;" /> </center>
+
+<EditForm Model="eproduct" OnInvalidSubmit="createproduct">
+
+        <div class="form-group">
+            <label>Product name </label>
+          <InputText class="form-control" @bind-Value="eproduct.Product_name" id="Product_name" placeholder="PRODUCT_NAME" />
+        </div>
+        <div class="form-group">
+            <label>Sale Price</label>
+          <InputNumber  class="form-control" @bind-Value="eproduct.Sale_price" id="Sale_price" placeholder="SALE_PRICE" />
+        </div>
+        <div class="form-group">
+            <label>Stock</label>
+          <InputNumber class="form-control" @bind-Value="eproduct.Stock" id="Stock" placeholder="STOCK" />
+         
+        </div>
+        <div class="form-group">
+            <label>Offer sale</label>
+          <InputNumber type="email" class="form-control" @bind-Value="eproduct.Offer_sale" id="Offer_sale"
+            placeholder="OFFER_SALE" />
+         
+        </div>
+         <div class="form-group">
+            <label>Imagen</label>
+          <InputText class="form-control" @bind-Value="eproduct.Product_image" id="Product_image"
+            placeholder="PRODUCT_IMAGE" />
+            <button class="btn btn-primary" @onclick="() => verproduct(eproduct.Product_image)">Ver imagen</button>
+        </div>
+
+         <div class="form-group">
+        <label>Fecha</label>
+        <InputDate @bind-Value="eproduct.Product_data" class="form-control" id="Fecha" />
+    </div>
+          <div class="form-group">
+         <label>Category </label>
+          <InputNumber type="password" class="form-control" @bind-Value="eproduct.Category_id" id="Category_id"
+            placeholder="CATEGORY_ID" />
+          
+        </div>
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <button @onclick="() => createproduct()" class="btn btn-success" type="submit">Guardar</button>
+    <a href="/" class="btn btn-secondary">Cancelar</a>
+</EditForm>
+
+
+</div>
+</div>
+</div>
+
+@code {
+
+    [Inject] NavigationManager navigationManager { get; set; } = default!;
+    public E_Products eproduct = new E_Products();
+    public D_Products objDtosP = new D_Products();
+
+    public string imagen = "";
+    public void createproduct()
+    {
+        objDtosP.InsertarProductos(eproduct);
+        navigationManager.NavigateTo("/");
+    }
+    public void verproduct(string img)
+    {
+        imagen = img;
+    }
+}

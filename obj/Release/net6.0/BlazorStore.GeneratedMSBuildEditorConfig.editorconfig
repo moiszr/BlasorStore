@@ -1,0 +1,136 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BlazorStore
+build_property.RootNamespace = BlazorStore
+build_property.ProjectDir = C:\Users\moise\Desktop\BlazorStore\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\moise\Desktop\BlazorStore
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/moise/Desktop/BlazorStore/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Acount/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNvdW50XExvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Acount/Registrarse.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNvdW50XFJlZ2lzdHJhcnNlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Card.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Category/Alimentos.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlcQWxpbWVudG9zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Category/Bebes.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlcQmViZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Category/Bebidas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlcQmViaWRhcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Category/Cajaproducto.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlcQ2FqYXByb2R1Y3RvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Category/Cuidado_personal.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlcQ3VpZGFkb19wZXJzb25hbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Category/FrutasyVegetales.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlcRnJ1dGFzeVZlZ2V0YWxlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Category/Hogar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlcSG9nYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Category/Limpieza.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlcTGltcGllemEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Createproducts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlcHJvZHVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Editproducts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdHByb2R1Y3RzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Nosotros.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm9zb3Ryb3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Orders/CreateOrden.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXENyZWF0ZU9yZGVuLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Orders/EditOrden.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXEVkaXRPcmRlbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Paypal.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5cGFsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Productable.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdGFibGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/ProductDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdERldGFpbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Shop.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvcC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Ventajas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFqYXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Shared/AccountLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFjY291bnRMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-vb4afc40r6
+
+[C:/Users/moise/Desktop/BlazorStore/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-tnz9zugwyl
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/moise/Desktop/BlazorStore/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
